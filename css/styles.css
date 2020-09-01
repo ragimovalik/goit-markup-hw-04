@@ -1,0 +1,490 @@
+/* Цвет фона - основной #ffffff */
+/* Цвет фона - второстепенный и подвал - #2F303A */
+/* Цвет фона - кнопка - #2196F3 */
+/* Цвет фона - секция Наша Команда - #F5F4FA */
+/* Цвет лого - #2196F3 */
+/* Цвет текста - заголовки и навигация - #212121*/
+/* Цвет текста - параграф, телефон и почта - #757575 */
+/* Цвет текста - навигация при активности и кнопки - #2196F3 */
+/* Цвет текста - основные услуги и адрес в подвале - #ffffff */
+/* Цвет текста - подвал - телефон и почта - 255, 255, 255, 0.6 */
+
+:root {
+  --bgc-primary: #ffffff;
+  --bgc-secondary: #2f303a;
+  --bgc-button: #2196f3;
+  --bgc-our-team: #f5f4fa;
+  --txt-nav-n-headings: #212121;
+  --txt-paragraphs: #757575;
+  --txt-inactive: #2196f3;
+  --txt-main-inactive-foot-address: #ffffff;
+  --txt-footer-phone-n-mail: rgba(255, 255, 255, 0.6);
+}
+
+.body {
+  background-color: var(--bgc-primary);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--txt-nav-n-headings);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: var(--txt-paragraphs);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+/* Logo; navigation; address */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  background-color: var(--bgc-primary);
+}
+
+.header-flex {
+  display: flex;
+  align-items: baseline;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: baseline;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+}
+
+.logo-nav {
+  margin-right: 93px;
+
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-nav span {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: var(--txt-nav-n-headings);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--txt-inactive);
+}
+
+.nav-links-items {
+  margin-right: 50px;
+}
+
+.nav-links-items:last-child {
+  margin-right: 0;
+}
+
+.nav-address {
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+
+.nav-address a {
+  color: var(--txt-paragraphs);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-address a:hover,
+.nav-address a:focus {
+  color: var(--txt-inactive);
+}
+
+.nav-address-items + .nav-address-items {
+  margin-left: 50px;
+}
+
+/* Main */
+/* Main - banner */
+
+.main-activity-section {
+  background-color: var(--bgc-secondary);
+  text-align: center;
+}
+
+.main-activity-content {
+  padding: 200px 0;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-activity-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  color: var(--txt-main-inactive-foot-address);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-activity-button {
+  margin-top: 0;
+  border-radius: 4px;
+  border: transparent;
+  padding: 10px 32px;
+
+  background-color: var(--bgc-button);
+  color: var(--txt-main-inactive-foot-address);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.main-activity-button:focus,
+.main-activity-button:hover {
+  outline: 1px solid #ffffff;
+}
+
+/* Main - Advantages Section */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.advantages h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantages-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-list-items {
+  flex-basis: calc((100%-3 * 30px) / 4);
+}
+
+.advantages-list-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Main - Our Work Section */
+
+.our-work {
+  padding: 94px 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.our-work-flex {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.our-work-flex-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.our-work-flex-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Main - Our Team Section */
+
+.our-team-section {
+  padding: 94px 0;
+
+  background-color: var(--bgc-our-team);
+}
+
+.our-team-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.our-team-list-item {
+  text-align: center;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.our-team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--bgc-primary);
+}
+
+.our-team-person h3 {
+  margin: 0 0 10px 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team-person p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--bgc-secondary);
+}
+
+.footer-content-positioning {
+  padding: 60px 0;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+}
+
+.logo-footer span {
+  color: #ffffff;
+}
+
+.footer-address {
+  display: block;
+
+  color: var(--txt-main-inactive-foot-address);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-address p {
+  display: block;
+  margin: 0;
+
+  letter-spacing: inherit;
+  color: #ffffff;
+}
+
+.footer-address a {
+  color: var(--txt-footer-phone-n-mail);
+}
+
+.footer-address a:hover,
+.footer-address a:focus {
+  color: var(--txt-inactive);
+}
+
+.footer-address-elements:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* End of Main Page */
+
+/* Portfolio Page */
+
+.projects {
+  padding: 94px 15px;
+}
+
+/* Projects - Filter */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 56px 0;
+}
+
+.filter-type {
+  display: inline-block;
+}
+
+.filter-type:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter button {
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border: none;
+  outline-color: transparent;
+
+  background-color: var(--bgc-our-team);
+  color: var(--txt-nav-n-headings);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+}
+
+.filter button:hover,
+.filter button:focus {
+  border: none;
+  outline-color: transparent;
+
+  background-color: var(--bgc-button);
+  color: var(--txt-main-inactive-foot-address);
+}
+
+/* Projects - List */
+
+/* убрать отступы по умолчанию для списков и ссылок */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.projects-list-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.projects-list-item:hover,
+.projects-list-item:focus {
+  outline: 1px solid var(--txt-inactive);
+}
+
+.projects-list-item a {
+  display: block;
+}
+
+.projects-list h3 {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.projects-list-name {
+  display: block;
+  margin: 0;
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+}

@@ -159,8 +159,19 @@ a {
 /* Main - banner */
 
 .main-activity-section {
-  background-color: var(--bgc-secondary);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-banner-image.jpg);
 }
 
 .main-activity-content {
@@ -488,3 +499,5 @@ a {
   border: 1px solid #eeeeee;
   border-top: transparent;
 }
+
+/* пробы дз-3 */

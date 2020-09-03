@@ -378,16 +378,58 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
   color: var(--txt-nav-n-headings);
 }
 
 .our-team-person p {
-  margin: 0;
+  margin: 0 0 16px 0;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.social-networks-item {
+  list-style-type: none;
+}
+
+.social-networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bgc-primary);
+}
+
+.social-networks-link:hover,
+.social-networks-link:focus {
+  background-color: var(--bgc-button);
+}
+
+.social-networks-link:hover .icons-social,
+.social-networks-link:focus .icons-social {
+  fill: var(--bgc-primary);
+}
+
+.icons-social {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
 
 /* Main - Our Customers Section */
@@ -423,20 +465,14 @@ a {
   margin-right: 30px;
 }
 
-/* Проверить классы на иконки */
-
-.icons {
-  display: block;
-  width: 32px;
-  height: 29px;
+.icons-customers {
+  fill: #afb1b8;
 }
 
-/* 
-
-
-
-
-*/
+/* .our-customers-logo .icons {
+  width: 32px;
+  height: 29px;
+} */
 
 /* Footer */
 

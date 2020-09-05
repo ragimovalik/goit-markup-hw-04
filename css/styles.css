@@ -8,6 +8,7 @@
 /* Цвет текста - навигация при активности и кнопки - #2196F3 */
 /* Цвет текста - основные услуги и адрес в подвале - #ffffff */
 /* Цвет текста - подвал - телефон и почта - 255, 255, 255, 0.6 */
+/* Цвет иконок - соц.сети и логотипы клиентов #afb1b8 */
 
 :root {
   --bgc-primary: #ffffff;
@@ -19,6 +20,7 @@
   --txt-inactive: #2196f3;
   --txt-main-inactive-foot-address: #ffffff;
   --txt-footer-phone-n-mail: rgba(255, 255, 255, 0.6);
+  --icons-socials-n-customers: #afb1b8;
 }
 
 .body {
@@ -160,7 +162,7 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--txt-paragraphs);
+  fill: currentColor;
 }
 
 /* Main */
@@ -455,7 +457,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icons-socials-n-customers);
   border-radius: 4px;
   width: 170px;
   height: 90px;
@@ -476,7 +478,7 @@ a {
 }
 
 .icons-customers {
-  fill: #afb1b8;
+  fill: var(--icons-socials-n-customers);
 }
 
 /* Footer */

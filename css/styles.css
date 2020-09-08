@@ -65,9 +65,6 @@ a {
 .header-flex {
   display: flex;
   align-items: baseline;
-
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .nav-flex {
@@ -98,8 +95,8 @@ a {
 
 .nav-links a {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--txt-nav-n-headings);
 
